@@ -7,7 +7,7 @@ const DateTimeDisplay = ({
 }) => {
   return (
     <div
-      className={`leading-5 items-center flex flex-col py-0 px-[0.75rem] text-7xl ${
+      className={`leading-5 items-center flex flex-col py-0 px-[0.75rem] md:px-[0.75rem] text-3xl md:text-7xl ${
         isDanger ? "text-[#ff0000]" : ""
       }`}
     >
