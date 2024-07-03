@@ -7,13 +7,8 @@ const useCountdown = (targetDate: Date) => {
   );
 
   useEffect(() => {
-    const tickSound = new Audio("/clockTick.mp3"); // Load the tick sound
-    tickSound.preload = "auto"; // Preload the audio file
-
     const interval = setInterval(() => {
       setCountDown(() => {
-        tickSound.currentTime = 0; // Reset the audio playback to the beginning
-        tickSound.play(); // Play the tick sound
         return countDownDate - new Date().getTime();
       });
     }, 1000);
